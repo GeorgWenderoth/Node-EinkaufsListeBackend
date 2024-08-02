@@ -1,0 +1,25 @@
+const mongoose = require('mongoose');
+
+const grocerySchema = new mongoose.Schema({
+
+    itId: {
+        type: int,
+        required: true, 
+        unique: true
+    },
+
+    einkaufsPunkt: {
+        type: String,
+        required: true
+    },
+    amount: {
+        type: int,
+        required: true
+    },
+    notizen: {
+        type: String,
+        required: false
+    }
+}); 
+
+module.exports = mongoose.model('User', userSchema);
