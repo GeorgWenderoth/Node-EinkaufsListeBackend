@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+
+//deprecated
 const grocerySchema = new mongoose.Schema({
 
     itId: {
